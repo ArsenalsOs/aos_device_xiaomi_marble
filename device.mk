@@ -31,3 +31,6 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Inherit from MindTheGapps
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
